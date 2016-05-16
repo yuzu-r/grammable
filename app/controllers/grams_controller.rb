@@ -11,7 +11,7 @@ class GramsController < ApplicationController
   end
 
   def new
-    @gram = Gram.new   # comment this line to make an error that tests don't catch
+    @gram = Gram.new   
   end
 
   def create
@@ -53,10 +53,6 @@ class GramsController < ApplicationController
   private
     def gram_params
       params.require(:gram).permit(:message, :picture)
-    end
-
-    def render_not_found(status = :not_found)
-      render text: "#{status.to_s.titleize}", status: status
     end
 
 end

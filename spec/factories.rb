@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :comment do
+    message "wow"    
+  end
   factory :user do
     sequence :email do |n|
       "dummyEmail#{n}@example.com"
@@ -12,4 +15,5 @@ FactoryGirl.define do
     picture { fixture_file_upload(Rails.root.join('spec', 'fixtures', 'smiley.png'), 'image/png') }
     association :user
   end
+
 end
