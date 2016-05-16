@@ -57,4 +57,7 @@ RSpec.configure do |config|
 
   # devise helpers
   config.include Devise::TestHelpers, type: :controller
+
+  # image helper - factory girl
+  include ActionDispatch::TestProcess 
 end
