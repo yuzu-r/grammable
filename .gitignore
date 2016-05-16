@@ -13,3 +13,6 @@
 /tmp
 config/secrets.yml
 .setenv
+/public/uploads
+# Ignore application configuration
+/config/application.yml

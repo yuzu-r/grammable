@@ -1,2 +1,7 @@
 <h1>Grams!</h1>
 <p>token edit, testing heroku deploy</p>
+
+<% @grams.each do |gram| %>
+  <%= gram.message %>
+  <%= image_tag gram.picture %>
+<% end %>
